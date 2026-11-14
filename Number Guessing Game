@@ -1,0 +1,12 @@
+# Number Guessing Game
+Secret_number = 4 # this is our fixed secret number.
+while True: # keeps the game running.
+
+    guess = int(input("Guess the number:")) # Takes a guess from hte user.
+    if guess == Secret_number: # Checks whether the guess is correct.
+        print("Correct guess!")
+        break # Stops the loop when the answer is correct.
+    else: # Runs when the guess is wrong.
+        print("Wrong guess!Try again.")
+
+# Understand 'while' loop and 'break' properly.
