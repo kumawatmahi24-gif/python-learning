@@ -1,0 +1,11 @@
+#Check Whether a number is even or odd
+def check_number(num):
+    if num % 2 == 0:
+        print("This is an even number.")
+    else:
+        print("This is an odd number.")
+# Ask the user to enter a number
+num =int(input("Enter a number:"))
+
+# Call the function
+check_number(num)
