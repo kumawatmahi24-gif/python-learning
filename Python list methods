@@ -1,0 +1,24 @@
+# Function to display the current list
+def display_list(my_list):
+# print the list so we can see its cuurent values
+    print("Current List:", my_list)
+
+# Initial list
+# Creating an initial list with 5 numbers
+data_list = [10, 20, 30, 40, 50]
+display_list(data_list) # Calling the function to display the original list
+
+# Using append() to add a new item at the end of the list
+new_item_append = 60
+# append() adds the new item at the end of the list
+data_list.append(new_item_append)
+# Dispaly the upload list
+display_list(data_list)
+
+# Using insert() to add a new item at a specific position
+new_item_insert = 25
+position_to_insert = 2 # Choosing index 2 (third position)
+# insert()adds 25 at index 2
+data_list.insert(position_to_insert, new_item_insert)
+# Display the final updated list
+display_list(data_list)
