@@ -1,0 +1,14 @@
+# If-Else Statements
+# Store student marks
+marks = 83
+# Check the student's grade
+if marks >=90:  # Checks the first condition.
+    print("Grade A")
+elif marks >=70:   # Checks another condition if the previous one is false.
+    print("Grade B")
+elif marks >=50:
+    print("Grade C")
+else:           # runs when none of the conditions are true.
+    print("Grade D")
+# Display student marks
+print("Your marks are:", marks)
