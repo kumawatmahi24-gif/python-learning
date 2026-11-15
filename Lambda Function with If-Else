@@ -1,0 +1,6 @@
+check_number = lambda x:"Even" if x % 2 == 0 else"Odd" # % gives the remainder and if remainder is 0, the number is Even.
+# Otherwise, the number is Odd
+# store a number
+number =2
+# Display the result
+print("The number is:", check_number(number))
