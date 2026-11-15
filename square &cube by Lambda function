@@ -1,0 +1,9 @@
+# A lambda function to calculate the square of a number
+square = lambda number: number*number # number*number - calculates square 
+# A lambda function to calculate the cube of a number
+cube = lambda number:number*number*number # number*number - calculates cube 
+# Store a number in a variable or input by user 
+num = 4
+# Display the square and cube by print statement 
+print("Square of",num,"is",square(num)) # calls the function
+print("Cube of",num,"is",cube(num)) # calls the function
