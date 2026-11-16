@@ -1,0 +1,57 @@
+# simple calculator by Variables
+num1= 50
+num2= 25
+addition = num1+num2
+subtraction = num1-num2
+multiplication = num1*num2
+division = num1/num2
+
+print("Addition:",addition)
+print("Subtraction:",subtraction)
+print("Multiplication:",multiplication)
+print("Division:",division)
+
+# Let's upgrade calculator using input().
+num1= input("Enter the first number:")
+num2= input("Enter the second number:")
+print(num1)
+print(num2)
+
+# let's add int before input
+num1=int(input("Enter the first number:"))
+num2=int(input("Enter the second number:"))
+
+addition = num1+num2
+subtraction = num1-num2
+multiplication = num1*num2
+division = num1/num2
+
+print("Addition:",addition)
+print("Subtraction:",subtraction)
+print("Multiplication:",multiplication)
+print("Division:",division)
+
+# age calculator
+birth_year =2005
+current_year =2026
+age=current_year - birth_year
+print("you are",age,"year old")
+# int user se input
+birth_year=int(input("Enter you year:"))
+current_year=2026
+age=current_year-birth_year
+print("you are age is:",age)
+
+# Lets simple make greeting app
+#name="mahi"
+print("hello",name)
+print("you are welcome in our website")
+print("have a good day ")
+
+name=input("Enter your name")
+age=input("Enter your age")
+favourite_food=input("Enter you favourite food")
+print("hello",name)
+print("you are",age,"year old")
+print("you like to eat",favourite_food)
+
