@@ -1,0 +1,173 @@
+WHAT I LEARNED TODAY!
+MULTIPLE VARIABLE ASSIGNMENT AND SWAPPING!
+SOME IF-ELSE CONCPTS!
+ #start with very basic practice 1 what will be the output?
+ a, b, c = 10, 20, 30
+ print(a)
+ print(b)
+ print(c)
+ output will be - 10, 20, 30. 
+ # Remember: Python can SWAP two variable without needing a temporary variable.
+ let's see one more questuon easy! practice 2 now, you have to predict the ouput?
+ a, b, c = 10, 20, 30
+ a,b = b,c             # swap the number like a=10,b=20  and b=20,c=30 it becomes a gets 20 and b gets 30
+                  # now, we get new values a=20, b=30, c=30
+ b,c = a,b              # Again pyhton read the right side first remeber this so, a has 20, b has 30
+                 # now, b gets 20, c gets 30
+                        # Python read all values on the right before changing the variables on the left.
+ total = a + b + c 
+     20 + 20 + 30
+     70
+     so, total = 70 
+print(a) # 20
+print(b) # 20
+print(c) # 30
+
+# Medium level 
+x, y, z = 5, 10, 15  
+x, y, z = z, x, y                               first swap: x=15, y=5, z=10
+y, z = z,y                                         second swap: x=15, y=10, z=5
+result = x*2 + y - z                                   15 * 2 + 10 - 5 
+print(z)        #5                                        30 + 10 - 5
+print(y)        #10                                             35
+print(result)   #35
+
+UNDESRTAND THE SWAPPING CONCEPT -
+we have to see one more question 
+
+x, y, z = 5, 10, 15                                first swap: x=10, y=15, z=15
+x,y = x,z                                           second swap: x=15, y=15, z=10
+y = x + y                                               y= 15 + 15 = 30
+z = y - z                                               z= 30 - 10 = 20 now z becomes 20
+print("X:",x)             
+print("Y:",y)
+print("Z:",z) 
+
+IF - ELSE STATEMENTS ***
+if condition:
+     # code runs if condition is TRUE
+else:
+     # code runs if condition is False
+we covers   if and else
+            elif
+            and
+            or
+            not
+            Nested conditions
+            True OR False
+marks =75
+if marks >=90:
+    print("Grade A")
+else:
+if marks >=60:
+  print("Grade B")
+else:
+  print("Grade C")
+output:- Grade B
+
+number =15
+if number > 10:
+  if number % 2 == 0:  # False (remainder is 1) % modulus operator. it gives the remainder after division.
+    print("Greater and Even")
+  else:
+    print("Greater and Odd") so, pyhton executes the inner else!
+  else:
+    print("Small Number")
+Output:- Greater and Odd
+
+# Multiple conditions 
+age = 22
+marks = 75
+if age >=18 and marks >=60: # ***and means both conditions must be True***
+  print("Eligible")
+else:
+  print("Not Eligible")
+Output;- Eligible 
+
+age = 17
+marks = 85
+has_certificate = True
+if age >=18 and marks >=60:
+  print("Condition 1")
+elif marks >=80 or has_certificate == True:     # elif runs only when the first if conditions is False.
+  print("Condition 2")
+else:
+  print("Not Eligible")
+Output:- age >=18 - False
+         First if condition - False
+         marks >= 80 - True
+         has_certificate == True - True
+         True or True -True
+  So, pytho prints Condition 2.
+
+username = "charger"
+password = "hello123"
+if username == "charger" and password == "hello123":
+  print("Login Successful")
+
+elif username == "charger":
+  print("Wrong Password")
+else:
+  print("User Not Found")
+        ***   Python doesn't check the elif because the first if condition is already True. ***
+# Remember  this trick:
+and                        Both must be True                                True and False = False
+or                         At least one must be True                        True or False = True
+
+a = True
+b = False
+if a and b:  True AND False = False
+  print("Apple")
+elif a or b: True OR False = True
+  print("Banana")
+else:
+  print("Mango")
+Output:- So, python prints Banana
+
+*** and -- Both must be True 
+*** or -- At least one must be True
+
+let's see one more question
+x = 10 
+y = 20
+if x > 5 and y < 15:
+  print("A")
+elif x < 5 or y > 15:
+  print("B")
+else:
+  print("C")
+Output:- B
+
+is_raining = False
+has_umbrella = False
+
+if not is_raining:     # not False = True 
+  print("Go Outside")
+elif has_umbrella:
+  print("Take Umbrella")
+else:
+  print("Stay Home")
+  
+Question -- 
+If age is 18 or above AND marks are 60 or above, print "Eligible".
+If marks are 40 or above AND attendance is False, print "Attendance Required".
+If the student has a certificate OR attendance is True, print "Manual Verification".
+Otherwise, print "Not Eligible".
+Extra requirement: Use not in at least one condition.Output:- Go Outside 
+ age = 18
+marks = 70
+attendance = False
+has_certificate = True
+
+if age >= 18 and marks >= 60:
+    print("Eligible")
+
+elif marks >= 40 and not attendance:
+    print("Attendance Required")
+
+elif has_certificate or attendance:
+    print("Manual Verification")
+
+else:
+    print("Not Eligible")
+
