@@ -33,7 +33,7 @@ I'll regularly upload:
 
 Each program is an opportunity to understand something new.
 
-My Goal
+My Goal:-
 
 My goal is to build strong programming fundamentals, improve my problem-solving skills, and gradually move towards Artificial Intelligence and Machine Learning.
 
